@@ -45,9 +45,6 @@ public class MainActivity extends Activity {
         companyField.setHint("Company Name");
         amtdownloadedField = new EditText(this);
         amtdownloadedField.setHint("QTY of Apps needed");
-        
-     //by default the groupRate will be false
-        groupRate = false;
      
      // Calculation Button
         Button compute = new Button(this);
@@ -68,19 +65,13 @@ public class MainActivity extends Activity {
         		
         		// Needed to add some sort of welcome message after the compute was hit
         		results.setText("Attached you will find the quote for "+ companyField.getText().toString()  + ".\r\n\r\n");
+
+
+        		//Show the Results of the Calculation
+        		results.append("The total price will be $" + totalPrice + " at $" + pricePerApp + " per download.");
+
+
         		
-        		//Need to do some conditional thingy
-        		if (amountNeeded>0){
-        			if(amountNeeded>200){
-        				groupRate = true;
-        			int costPerDiscount = getResources().getInteger(R.integer.discoPrice);
-        			totalPrice = amountNeeded*costPerDiscount;
-        			results.append("The total price will be $" + totalPrice + " at $" + pricePerApp + " per download.");
-        			}else{
-        				//Show the Results of the Calculation
-                		results.append("The total price will be $" + totalPrice + " at $" + pricePerApp + " per download.");
-        			}	
-        		}	
         	}
         });
         
