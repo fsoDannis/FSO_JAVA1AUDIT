@@ -63,12 +63,9 @@ public class MainActivity extends Activity {
         		//In case I want to call the price of the app
         		pricePerApp = costPerDownload;
         		
-        		// Needed to add some sort of welcome message after the compute was hit
-        		results.setText("Attached you will find the quote for "+ companyField.getText().toString()  + ".\r\n\r\n");
-
-
+        		
         		//Show the Results of the Calculation
-        		results.append("The total price will be $" + totalPrice + " at $" + pricePerApp + " per download.");
+        		results.append("You're total price will be $" + totalPrice + " at $" + pricePerApp + " per download.");
 
 
         		

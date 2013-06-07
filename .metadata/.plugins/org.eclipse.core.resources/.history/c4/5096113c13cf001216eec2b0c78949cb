@@ -68,7 +68,7 @@ public class MainActivity extends Activity {
 
 
         		//Show the Results of the Calculation
-        		results.append("The total price will be $" + totalPrice + " at $" + pricePerApp + " per download.");
+        		results.append("You're total price will be $" + totalPrice + " at $" + pricePerApp + " per download.");
 
 
         		
