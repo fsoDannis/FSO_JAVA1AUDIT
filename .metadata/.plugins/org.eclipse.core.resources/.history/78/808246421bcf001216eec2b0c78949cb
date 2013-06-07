@@ -7,12 +7,14 @@ package com.dannis.java1week1_audit;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.view.Menu;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.view.View;
 
 public class MainActivity extends Activity {

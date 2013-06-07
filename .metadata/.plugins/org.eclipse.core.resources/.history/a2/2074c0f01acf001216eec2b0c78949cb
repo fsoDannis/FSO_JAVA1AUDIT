@@ -7,12 +7,14 @@ package com.dannis.java1week1_audit;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.view.Menu;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.view.View;
 
 public class MainActivity extends Activity {
@@ -100,9 +102,8 @@ public class MainActivity extends Activity {
         				//Show the Results of the Calculation
                 		results.append("The total price will be $" + totalPrice + " at $" + pricePerApp + " per download.");
         		    }
-        		//If the Fields Fail the Check, Throw an Error
         		}else{
-        			error.append("Enter a Company Name and Quantity first please...");
+        			error.append("You must enter a Company Name and Quantity First!");
         			error.setTextColor(Color.RED);
         		}
         	}
@@ -134,8 +135,6 @@ public class MainActivity extends Activity {
         setContentView(ll);
     }
 
-    
-    //Loop that checks the fields to see if they are blank or not. 
     public boolean validate(EditText[] fields){
         for(int i=0; i<fields.length; i++){
             EditText currentField=fields[i];
