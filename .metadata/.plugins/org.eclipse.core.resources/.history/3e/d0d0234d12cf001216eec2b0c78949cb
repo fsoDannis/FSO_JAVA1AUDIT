@@ -64,11 +64,6 @@ public class MainActivity extends Activity {
         		pricePerApp = costPerDownload;
         		
         		
-        		//Show the Results of the Calculation
-        		results.append("You're total price will be $" + totalPrice + " at $" + pricePerApp + " per download.");
-
-
-        		
         	}
         });
         
@@ -89,12 +84,6 @@ public class MainActivity extends Activity {
         form.addView(amtdownloadedField);
         form.addView(compute);
         ll.addView(form);
-        
-        
-     //Display the result Text
-        results = new TextView(this);
-        ll.addView(results);
-        
         
      //Setting the ll to show
         setContentView(ll);

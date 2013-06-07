@@ -12,7 +12,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.view.View;
 
 public class MainActivity extends Activity {
 
@@ -23,7 +22,7 @@ public class MainActivity extends Activity {
 	TextView pricePerAppResult;
 	EditText companyField;
 	EditText amtdownloadedField;
-	int totalPrice;
+	int totalAppsNeeded;
 	int pricePerApp;
 	boolean groupRate;
 	
@@ -49,32 +48,6 @@ public class MainActivity extends Activity {
      // Calculation Button
         Button compute = new Button(this);
         compute.setText("Compute!");
-        compute.setOnClickListener(new View.OnClickListener() {
-
-        	@Override
-        	public void onClick(View v) {
-        		
-        		//Convert the number entered(a string) to an integer that I can work with to mathmatize! 
-        		int amountNeeded = Integer.parseInt(amtdownloadedField.getText().toString());	
-        		//Grab the cost for the app
-        		int costPerDownload = getResources().getInteger(R.integer.appPrice);
-        		//Do the Math
-        		totalPrice = amountNeeded*costPerDownload;
-        		//In case I want to call the price of the app
-        		pricePerApp = costPerDownload;
-        		
-        		
-        		//Show the Results of the Calculation
-        		results.append("You're total price will be $" + totalPrice + " at $" + pricePerApp + " per download.");
-
-
-        		
-        	}
-        });
-        
-        
-        
-        
         
         
         
@@ -89,12 +62,6 @@ public class MainActivity extends Activity {
         form.addView(amtdownloadedField);
         form.addView(compute);
         ll.addView(form);
-        
-        
-     //Display the result Text
-        results = new TextView(this);
-        ll.addView(results);
-        
         
      //Setting the ll to show
         setContentView(ll);
