@@ -1,0 +1,19 @@
+!SESSION 2013-06-06 20:36:32.495 -----------------------------------------------
+eclipse.buildId=v21.0.1-543035
+java.version=1.7.0_04-ea
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product -keyring /Users/Dannis/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.android.ide.eclipse.adt.package.product -keyring /Users/Dannis/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-06-06 20:37:01.416
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.android.ide.eclipse.ddms 4 0 2013-06-06 20:37:02.580
+!MESSAGE DDMS files not found: /Users/Dannis/Downloads/adt-bundle-mac-x86_64/eclipse/Eclipse.app/Contents/MacOS/platform-tools/adb /Users/Dannis/Downloads/adt-bundle-mac-x86_64/eclipse/Eclipse.app/Contents/MacOS/tools/hprof-conv /Users/Dannis/Downloads/adt-bundle-mac-x86_64/eclipse/Eclipse.app/Contents/MacOS/tools/traceview 
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-06-06 20:37:05.177
+!MESSAGE An Android SDK is already being loaded. Please try again later.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-06-06 20:41:30.670
+!MESSAGE Failed to load properties file for project 'Java1Week1_AUDIT'
