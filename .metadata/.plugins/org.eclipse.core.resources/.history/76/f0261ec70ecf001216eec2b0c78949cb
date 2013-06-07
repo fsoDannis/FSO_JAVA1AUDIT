@@ -38,27 +38,8 @@ public class MainActivity extends Activity {
         lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
         ll.setLayoutParams(lp);
         
-     // setting up Edit text boxes for user entry
-        companyField = new EditText(this);
-        companyField.setHint("Company Name");
-        amtdownloadedField = new EditText(this);
-        amtdownloadedField.setHint("QTY of Apps needed");
         
         
-        
-        
-        // Create the Layout for the app
-        LinearLayout form = new LinearLayout(this);
-        form.setOrientation(LinearLayout.VERTICAL);
-        lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-        form.setLayoutParams(lp);
-        
-        // Adding fields to the layout
-        form.addView(companyField);
-        form.addView(amtdownloadedField);
-        ll.addView(form);
-        
-        setContentView(ll);
     }
 
     
