@@ -84,7 +84,8 @@ public class MainActivity extends Activity {
         			results.append("Normally the Price per app would be $"+pricePerApp+" dollars, but because you get a discounted rate due to the quantity ordered, " +
         					"the total price will be $" + totalDiscoPrice + " at $" + pricePerDiscoApp + " per download.");
         			groupSavings = totalPrice-totalDiscoPrice;
-        			results.append("\r\n\r\nA savings of $" +groupSavings+"!!!");
+        			results.append("\r\n\r\nA savings of $" +groupSavings+".");
+
 					        			}
         			else{
         				//Show the Results of the Calculation

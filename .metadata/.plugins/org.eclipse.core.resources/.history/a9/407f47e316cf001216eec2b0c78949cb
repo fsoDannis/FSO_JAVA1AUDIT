@@ -24,12 +24,10 @@ public class MainActivity extends Activity {
 	EditText companyField;
 	EditText amtdownloadedField;
 	int totalPrice;
-	int totalDiscoPrice;
 	int pricePerApp;
 	int pricePerDiscoApp;
-	int groupSavings;
 	boolean groupRate;
-	String discount = "Serious savings are coming your way!\r\n\r\n";
+	String discount = "You recieved a group rate! Serious savings are coming your way!\r\n";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,11 +78,11 @@ public class MainActivity extends Activity {
     				}
         			int costPerDiscount = getResources().getInteger(R.integer.discoPrice);
         			pricePerDiscoApp = costPerDiscount;
-        			totalDiscoPrice = amountNeeded*costPerDiscount;
-        			results.append("Normally the Price per app would be $"+pricePerApp+" dollars, but because you get a discounted rate due to the quantity ordered, " +
-        					"the total price will be $" + totalDiscoPrice + " at $" + pricePerDiscoApp + " per download.");
-        			groupSavings = totalPrice-totalDiscoPrice;
-        			results.append("\r\n\r\nA savings of $" +groupSavings+"!!!");
+        			totalPrice = amountNeeded*costPerDiscount;
+        			results.append("Normally the Price per app would be "+pricePerApp+" but because of the discounted Rate" +
+        					"The total price will be $" + totalPrice + " at $" + pricePerDiscoApp + " per download.");
+
+
 					        			}
         			else{
         				//Show the Results of the Calculation
