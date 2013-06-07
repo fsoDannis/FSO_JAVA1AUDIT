@@ -26,20 +26,13 @@ public class MainActivity extends Activity {
 	boolean groupRate;
 	
 
+	
+	
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-     // setting up the linear layout cause this is what we do
-        ll = new LinearLayout(this);
-        ll.setOrientation(LinearLayout.VERTICAL);
-        
-     // setting up the layout params which tells the layout to match both the width and the height of the entire screen
-        lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
-        ll.setLayoutParams(lp);
-        
-        
-        
     }
 
     
