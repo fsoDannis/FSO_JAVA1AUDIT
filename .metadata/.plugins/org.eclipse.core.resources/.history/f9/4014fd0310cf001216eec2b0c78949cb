@@ -8,7 +8,6 @@ package com.dannis.java1week1_audit;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -44,26 +43,21 @@ public class MainActivity extends Activity {
         companyField.setHint("Company Name");
         amtdownloadedField = new EditText(this);
         amtdownloadedField.setHint("QTY of Apps needed");
-     
-     // Calculation Button
-        Button compute = new Button(this);
-        compute.setText("Compute!");
         
         
         
-     // Create the Layout for the app
+        
+        // Create the Layout for the app
         LinearLayout form = new LinearLayout(this);
         form.setOrientation(LinearLayout.VERTICAL);
         lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         form.setLayoutParams(lp);
         
-     // Adding fields to the layout
+        // Adding fields to the layout
         form.addView(companyField);
         form.addView(amtdownloadedField);
-        form.addView(compute);
         ll.addView(form);
         
-     //Setting the ll to show
         setContentView(ll);
     }
 

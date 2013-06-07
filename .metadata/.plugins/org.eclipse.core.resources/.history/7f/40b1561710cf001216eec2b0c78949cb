@@ -46,8 +46,8 @@ public class MainActivity extends Activity {
         amtdownloadedField.setHint("QTY of Apps needed");
      
      // Calculation Button
-        Button compute = new Button(this);
-        compute.setText("Compute!");
+        Button b = new Button(this);
+        b.setText("Compute!");
         
         
         
@@ -60,7 +60,6 @@ public class MainActivity extends Activity {
      // Adding fields to the layout
         form.addView(companyField);
         form.addView(amtdownloadedField);
-        form.addView(compute);
         ll.addView(form);
         
      //Setting the ll to show
